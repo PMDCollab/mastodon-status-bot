@@ -1,0 +1,5 @@
+/target
+.env
+config.toml
+/.idea
+docker-compose.yml

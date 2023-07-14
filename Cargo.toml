@@ -1,0 +1,19 @@
+[package]
+name = "mastodon-status-bot"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+mastodon-async = { version = "1.2", features = ["mt"] }
+tokio = { version = "1.28", features = ["full"] }
+tinytemplate = "1.1"
+toml = "0.7"
+serde = { version = "1.0", features = ["derive"] }
+tide = "0.16"
+dotenv_rs = "0.16"
+tracing = "0.1"
+tracing-log = "0.1"
+tracing-subscriber = "0.3"
+valuable = { version = "0.1", features = ["derive"] }
+async-compat = "0.2"

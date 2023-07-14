@@ -1,0 +1,14 @@
+[default]
+down-template = "DOWN: The service '{{ group }}/{{ name }}' is currently offline or under high load. We are investigating the situation."
+up-template = "UP: The service '{{ group }}/{{ name }}' should have fully recovered and is available again."
+
+[default-friendly]
+down-template = "DOWN: {friendly_name} is currently offline or under high load. We are investigating the situation."
+up-template = "UP: {friendly_name} should have fully recovered and is available again."
+
+[foo.bar.template]
+down-template = "Oh no! Foobar is down!"
+up-template = "Great! Foobar is back!"
+
+[foo.baz]
+friendly-name = "Foobaz"
